@@ -22,7 +22,7 @@ export default async function migrations(request, response) {
       ...defaultMigrationOptions,
       dryRun: false,
     });
-
+    // teste
     await dbClient.end();
 
     if (migratedMigrations.length > 0) {
